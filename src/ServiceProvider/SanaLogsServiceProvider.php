@@ -3,8 +3,8 @@
 namespace swappco\SanaLogs\ServiceProvider;
 
 use Illuminate\Support\ServiceProvider;
-use SwappCo\SanaLogs\app\View\components\logo;
-use SwappCo\SanaLogs\SanaLogs;
+use swappco\SanaLogs\app\View\components\logo;
+use swappco\SanaLogs\SanaLogs;
 
 class SanaLogsServiceProvider extends ServiceProvider
 {
