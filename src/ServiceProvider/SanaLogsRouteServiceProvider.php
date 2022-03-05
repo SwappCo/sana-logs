@@ -32,10 +32,10 @@ class SanaLogsRouteServiceProvider extends RouteServiceProvider
         $this->configureRateLimiting();
 
         $this->routes(function () {
-            Route::prefix('api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('/pakages/swappco/sana-logs/src/routes/api.php'));
+//             Route::prefix('api')
+//                 ->middleware('api')
+//                 ->namespace($this->namespace)
+//                 ->group(base_path('/pakages/swappco/sana-logs/src/routes/api.php'));
 
             Route::middleware('web')
                 ->namespace($this->namespace)
