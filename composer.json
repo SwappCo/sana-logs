@@ -1,0 +1,54 @@
+{
+    "name": "swappco/sana-logs",
+    "description": "log system",
+    "keywords": [
+        "swapp",
+        "ali etemadi",
+        "logs",
+        "ali.etemadi.net@gmail.com"
+    ],
+    "homepage": "https://github.com/SwappCo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Etemadi",
+            "email": "ali.etemadi.net@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-div": {
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "swappco\\SanaLogs\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "swappco\\SanaLogs\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-pakeges": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+
+                "swappco\\SanaLogs\\ServiceProvider\\SanaLogsServiceProvider",
+                "swappco\\SanaLogs\\ServiceProvider\\SanaLogsRouteServiceProvider"
+            ],
+            "aliases": {
+                "SanaLogs": "swappco\\SanaLogs\\SanaLogs"
+            }
+        }
+    }
+}
