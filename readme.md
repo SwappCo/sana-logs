@@ -1,5 +1,5 @@
-#Sana Web Application
-###SanaLogs Pakage
+# Sana Web Application
+### SanaLogs Pakage
 readme.so
 ## Authors
 
@@ -19,13 +19,13 @@ Add badges  like: [readme.so](https://readme.so/)
 
 Install SanaLogs via composer
 ```bash
-composer require Swapp/SanaLogs
+composer require swappco/sana-logs
 ```
 ##Registration 
 
  this Package use __Package Discavery__
 ```bash
-composer require Swapp/SanaLogs
+composer requireswappco/sana-logs
 ```
 ## License
 
@@ -36,7 +36,7 @@ composer require Swapp/SanaLogs
 Clone the project
 
 ```bash
-  git clone https://SanaLogs
+  git clone https://swappco/sana-logs
 ```
 
 Go to the project directory
