@@ -39,30 +39,37 @@ class SanaLogs
 
     public function error(string $message, array $context = []): void
     {
+          $this->writeLog(__FUNCTION__, $message, $context);
     }
 
     public function debug(string $message, array $context = []): void
     {
+          $this->writeLog(__FUNCTION__, $message, $context);
     }
 
     public function alert(string $message, array $context = []): void
     {
+          $this->writeLog(__FUNCTION__, $message, $context);
     }
 
     public function critical(string $message, array $context = []): void
     {
+          $this->writeLog(__FUNCTION__, $message, $context);
     }
 
     public function emergency(string $message, array $context = []): void
     {
+          $this->writeLog(__FUNCTION__, $message, $context);
     }
 
     public function notice(string $message, array $context = []): void
     {
+          $this->writeLog(__FUNCTION__, $message, $context);
     }
 
     public function warning(string $message, array $context = []): void
     {
+          $this->writeLog(__FUNCTION__, $message, $context);
     }
 
     private function writeLog(string $__FUNCTION__, string $message, array $context)
