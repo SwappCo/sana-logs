@@ -35,11 +35,11 @@ class SanaLogsRouteServiceProvider extends RouteServiceProvider
 //             Route::prefix('api')
 //                 ->middleware('api')
 //                 ->namespace($this->namespace)
-//                 ->group(base_path('/pakages/swappco/sana-logs/src/routes/api.php'));
+//                 ->group(__DIR__.'/../routes/api.php');
 
             Route::middleware('web')
                 ->namespace($this->namespace)
-                ->group(base_path(__DIR__.'/../routes/web.php'));
+                ->group(__DIR__.'/../routes/web.php');
         });
     }
 
